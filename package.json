@@ -4,12 +4,18 @@
   "description": "Simple RPG game",
   "main": "index.js",
   "directories": {
-    "test": "tests",
-    "server": "forever -c \"nodemon --exitcrash -L\" index.js"
+    "test": "tests"
   },
   "scripts": {
+    "server": "forever -c \"nodemon --exitcrash -L\" index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Riccardo Carzaniga",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  }
 }
