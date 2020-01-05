@@ -2,10 +2,12 @@
 require('dotenv').config();
 
 /* Establishes the connection to the database */
-require("./database/connect");
+require("./database/connection");
 
 /* Loads all the core functionalities */
 const app = require("./app");
 
+const port = process.env.PORT;
+
 /* Starts the express app */
-app.listen(process.env.PORT, () => console.log(`Listening on port ${port}`));
+app.listen(port, () => console.log(`Listening on port ${port}`));
